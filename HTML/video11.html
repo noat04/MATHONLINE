@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video bài giảng lớp 11</title>
+    <link rel="stylesheet" href="../CSS/video.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"><!-- chứa các biểu tượng icon -->
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- <div id="header"> -->
+        <div class="container">
+            <nav class="navbar navbar-expand-md bg-black">
+                <div class="container-fluid">   
+                    <!-- logo -->
+                    <div class="logo">
+                        <a href="../HTML/Home.html"><img src="../IMG/Blue Modern Technology & Gaming Logo.png" alt="logo" style="height: 60px;width: 100%;"></a>
+                    </div>
+                    <!-- menu_Dropdown -->
+                    <div class="collapse navbar-collapse" id="collapseNavbar">
+                        <ul class="navbar-nav text-center">
+                            <li class="nav-item dropdown">
+                                <a href="" class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown">Lớp học</a>
+                                <ul class="dropdown-menu text-center">
+                                    <li class=""><a href="../HTML/Lop10.html" class="dropdown-item">Lớp 10</a></li>
+                                    <li class=""><a href="../HTML/Lop11.html" class="dropdown-item">Lớp 11</a></li>
+                                    <li class=""><a href="../HTML/Lop12.html" class="dropdown-item">Lớp 12</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="" class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown">Kiểm tra</a>
+                                <ul class="dropdown-menu">
+                                    <li class=""><a href="../HTML/Test-Start.html" class="dropdown-item">kiểm tra thử</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="" class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown">Đề Thi</a>
+                                <ul class="dropdown-menu">
+                                    <li class=""><a href="../HTML/DeThiHK1.html" class="dropdown-item">Đề HKI</a></li>
+                                    <li class=""><a href="../HTML/DeThiHKII.html" class="dropdown-item">Đề HKII</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../HTML/About (1).html" class="nav-link  text-white">Chúng ta</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../HTML/contact.html" class="nav-link  text-white">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- search_btn -->
+                    <!-- <input type="text" placeholder="tìm kiếm" class="bx bx-search" style="border-radius: 10px;"> -->
+                    <div style="position: relative;">
+                        <input type="text" placeholder="Tìm kiếm" id="searchInput" style="border-radius: 10px;">
+                        <i class='bx bx-search search-icon' style="color: aliceblue;"></i>
+                    </div>
+                    <!-- <button type="button" class="btn btn-dark">Search</button>-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- btn_signup -->
+                    <div class="w3-container">
+                        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green w3-large" style="border-radius: 15px;">Đăng nhập</button> 
+                      
+                        <div id="id01" class="w3-modal">
+                          <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+                      
+                            <div class="w3-center"><br>
+                              <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+                            </div>
+                      
+                            <form class="w3-container" action="">
+                              <div class="w3-section">
+                                <label><b>Username</b></label>
+                                <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+                                <label><b>Password</b></label>
+                                <input class="w3-input w3-border" type="password" placeholder="Enter Password" name="psw" required>
+                                <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Đăng nhập</button>
+                                <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
+                               
+                              </div>
+                            </form>
+                            
+                            <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+                                <button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-green w3-large">Đăng kí</button>
+                                <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span>
+                                <div id="id02" class="w3-modal">
+                                    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+                                
+                                      <div class="w3-center"><br>
+                                        <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+                                      </div>
+                                
+                                      <form class="w3-container" action="">
+                                        <div class="w3-section">
+                                          <label><b>Name</b></label>
+                                          <input class="w3-input w3-border" type="text" placeholder="Enter Name" name="name" required>
+                                          <label><b>Ngày sinh</b></label>
+                                          <input class="w3-input w3-border" type="date" placeholder="Enter date" name="date" required>
+                                          <label><b>Địa chỉ</b></label>
+                                          <input class="w3-input w3-border" type="text" placeholder="Enter address" name="address" required>
+                                          <label><b>Số điện thoại</b></label>
+                                          <input class="w3-input w3-border" type="text" placeholder="Enter sdt" name="sdt" required>
+                                          <label><b>Email</b></label>
+                                          <input class="w3-input w3-border" type="text" placeholder="Enter mail" name="mail" required>
+                                          <label><b>Password</b></label>
+                                          <input class="w3-input w3-border" type="password" placeholder="Enter Password" name="psw" required>
+                                          <label><b>Repassword</b></label>
+                                          <input class="w3-input w3-border" type="password" placeholder="Enter repassword" name="repsw" required>
+                                          <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Đăng kí</button>
+                                        </div>
+                                      </form>
+                              
+                            </div>
+                      
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </nav>
+            <div class="container mt-5">
+                <div class="box-class">
+                    <div>
+                        <h1>Video giáo trình toán 11</h1>
+                        Chào mừng các bạn đến với hành trình vượt qua những bài toán phức tạp và khám phá sâu hơn về thế giới của Toán học! Video giáo trình Toán lớp 11 sẽ là người bạn đồng hành đáng tin cậy, giúp bạn hiểu rõ hơn về các khái niệm và phương pháp trong môn học quan trọng này.
+
+                        Trong video này, chúng tôi sẽ cùng các bạn khám phá các chủ đề chính trong chương trình Toán lớp 11, từ hệ số tỷ số và hàm số đến đại số tuyến tính và hình học không gian. Bằng cách giải thích chi tiết và cung cấp ví dụ minh họa, chúng tôi sẽ giúp bạn hiểu sâu hơn về mỗi khái niệm và cách áp dụng chúng trong thực tế.
+
+                        Không chỉ giới thiệu kiến thức lý thuyết, video này còn tập trung vào việc phát triển kỹ năng giải quyết vấn đề và tư duy logic của bạn. Chúng tôi tin rằng việc rèn luyện những kỹ năng này không chỉ giúp bạn thành công trong việc học môn Toán, mà còn là nền tảng quan trọng cho sự phát triển cá nhân và sự nghiệp sau này.
+
+                        Hãy cùng chúng tôi khám phá vẻ đẹp và sức mạnh của Toán học, nơi mà sự hiểu biết và khám phá không bao giờ có điểm dừng!
+                    </div>
+                    <div class="grid-container">
+                        <div class="grid-item"><a href="../video/bai18-phuong-trinh-bac-hai-voi-he-so-thuc_noneVIP.mp4">
+                            <video src="../video/bai18-phuong-trinh-bac-hai-voi-he-so-thuc_noneVIP.mp4" type="video/mp4" controls style="width: 300px;height: 180px;"></video></a>
+                            <h5>1. Hàm Số Lượng Giác Và Phương Trình Lượng Giác</h5>
+                        </div>
+                        <div class="grid-item"><a href="../video/bai2-cuc-tri-noneVIP.mp4">
+                            <video src="../video/bai2-cuc-tri-noneVIP.mp4" type="video/mp4" controls style="width: 300px;height: 180px;"></video></a>
+                            <h5> 2. Dãy Số, Cấp Số Cộng Và Cấp Số Nhân</h5>
+                        </div>
+                        <div class="grid-item"><a href="../video/bai2-phuong-trinh-luong-giac-co-ban-noneVIP.mp4">
+                            <video src="../video/bai4-bpt-bac-nhat-hai-an-noneVIP.mp4" type="video/mp4" controls style="width: 300px;height: 180px;"></video></a>
+                            <h5>3. Giới Hạn, Hàm Số Liên Tục</h5>
+                        </div>
+                        <div class="grid-item"><a href="../video/bai3-gia-tri-ln-nn-ham-so_noneVIP.mp4">
+                            <video src="../video/bai3-gia-tri-ln-nn-ham-so_noneVIP.mp4" type="video/mp4" controls style="width: 300px;height: 180px;"></video></a>
+                            <h5>4. Quan Hệ Song Song Trong Không Gian</h5>
+                        </div>
+                        <div class="grid-item"><a href="../video/bai3-mot-so-phuong-trinh-luong-giac-thuong-gap-noneVIP.mp4">
+                            <video src="../video/bai3-mot-so-phuong-trinh-luong-giac-thuong-gap-noneVIP.mp4" type="video/mp4" controls style="width: 300px;height: 180px;"></video></a>
+                            <h5>5. Thống Kê</h5>
+                        </div>
+                        <div class="grid-item"><a href="../video/bai4-bpt-bac-nhat-hai-an-noneVIP.mp4">
+                            <video src="../video/bai4-bpt-bac-nhat-hai-an-noneVIP.mp4" type="video/mp4" controls style="width: 300px;height: 180px;"></video></a>
+                            <h5>6. Xác Suất</h5>
+                        </div>
+                        <div class="grid-item"><a href="../video/bai5-dau-cua-tam-thuc-bac-hai-noneVIP.mp4">
+                            <video src="../video/bai5-dau-cua-tam-thuc-bac-hai-noneVIP.mp4" type="video/mp4" controls style="width: 300px;height: 180px;"></video></a>
+                            <h5>7. Hàm Số Mũ Và Hàm Số Lôgarit</h5>
+                        </div>
+                        <div class="grid-item"><a href="../video/bai5-khao-sat-ham-so_noneVIP.mp4">
+                            <video src="../video/bai5-khao-sat-ham-so_noneVIP.mp4" type="video/mp4" controls style="width: 300px;height: 180px;"></video></a>
+                            <h5>8. Đạo Hàm</h5>
+                        </div>
+                        <div class="grid-item"><a href="../video/bai6-luy-thua_noneVIP.mp4">
+                            <video src="../video/bai6-luy-thua_noneVIP.mp4" type="video/mp4" controls style="width: 300px;height: 180px;"></video></a>
+                            <h5>9. Quan Hệ Vuông Góc Trong Không Gian</h5>
+                        </div>
+                        <div class="grid-item"><a href="../video/bai8-logarit_noneVIP.mp4">
+                            <video src="../video/bai8-logarit_noneVIP.mp4" type="video/mp4" controls style="width: 300px;height: 180px;"></video></a>
+                            <h5>10. Phép Biến Hình Trong Mặt Phẳng</h5>
+                        </div>
+                        <div class="grid-item"><a href="../video/c-1-bai2-tap-hop-noneVIP.mp4">
+                            <video src="../video/c-1-bai2-tap-hop-noneVIP.mp4" type="video/mp4" controls style="width: 300px;height: 180px;"></video></a>
+                            <h5>11. Lí Thuyết Đồ Thị</h5>
+                        </div>
+                        <div class="grid-item"><a href="../video/c-1-bai3-cac-phep-toan-tap-hop-noneVIP.mp4">
+                            <video src="../video/c-1-bai3-cac-phep-toan-tap-hop-noneVIP.mp4" type="video/mp4" controls style="width: 300px;height: 180px;"></video></a>
+                            <h5>12. Vẽ Kĩ Thuật</h5>
+                        </div>
+
+                        
+                    </div>
+                        
+                </div>
+            </div>
+        </div>
+        <div class="mt-5 p-4  bg-secondary  text-white text-center">
+            <div class="text-footer">
+                <div class="about-us" style="width: 50%; text-align: left;">
+                    <h5>Về chúng tôi</h5>
+                <span style="font-size: 12px;"><p>Là chương trình ôn tập, tự học TOÁN ,trực tuyến dành cho học sinh từ lớp 10 đến lớp 12 heo phương pháp mới,
+                        giúp tránh được cảm giác nhàm chán với cách học trên sách vở truyền thống.MOT giúp học sinh có thêm một người BẠN HỌC thân thiết, một GIA SƯ THÚ VỊ và là một CÔNG CỤ TỰ HỌC HIỆU QUẢ.</p></span>    
+                </div>
+                <div class="class-footer">
+                    <h6>Các lớp học</h6>
+                    <ul>
+                        <li><a href="../HTML/Lop10.html">Lớp 10</a></li>
+                        <li><a href="../HTML/Lop11.html">Lớp 11</a></li>
+                        <li><a href="../HTML/Lop12.html">Lớp 12</a></li>
+                    </ul>
+                </div>
+                <div class="class-footer">
+                    <h6>Chuyên đề</h6>
+                    <ul>
+                        <li><a href="../HTML/Lop10.html">Chuyên đề Lớp 10</a></li>
+                        <li><a href="../HTML/Lop11.html">Chuyên đề Lớp 11</a></li>
+                        <li><a href="../HTML/Lop12.html">Chuyên đề Lớp 12</a></li>
+                    </ul>
+                </div>
+                <div class="list-footer">
+                    <h5>Hãy theo dõi MATHGENIUS trên</h5>
+                    <ul>
+                        <li><a href=""><i class='bx bxl-facebook-circle'></i></a></li>
+                        <li><a href=""><i class='bx bxl-instagram-alt'></i></a></li>
+                        <li><a href=""><i class='bx bxl-google'></i></a></li>
+                        <li><a href=""><img src="../IMG/youtube-logo-24.png" alt="" style="position: relative;bottom: 9px;"></a></li>
+                        <li><a href=""><img src="../IMG/gmail-logo-24.png" alt=""  style="position: relative;bottom: 9px;"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+      
+</body>
+</html>

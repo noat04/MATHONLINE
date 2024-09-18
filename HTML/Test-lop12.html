@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"><!-- chứa các biểu tượng icon -->
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- <div id="header"> -->
+            <div class="container">
+                <nav class="navbar navbar-expand-md bg-black">
+                    <div class="container-fluid">   
+                        <!-- logo -->
+                        <div class="logo">
+                            <a href="../HTML/Home.html"><img src="../IMG/Blue Modern Technology & Gaming Logo.png" alt="logo" style="height: 60px;width: 100%;"></a>
+                        </div>
+                        <!-- menu_Dropdown -->
+                        <div class="collapse navbar-collapse" id="collapseNavbar">
+                            <ul class="navbar-nav text-center">
+                                <li class="nav-item dropdown">
+                                    <a href="" class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown">Lớp học</a>
+                                    <ul class="dropdown-menu text-center">
+                                        <li class=""><a href="../HTML/Lop10.html" class="dropdown-item">Lớp 10</a></li>
+                                        <li class=""><a href="../HTML/Lop11.html" class="dropdown-item">Lớp 11</a></li>
+                                        <li class=""><a href="../HTML/Lop12.html" class="dropdown-item">Lớp 12</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="" class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown">Kiểm tra</a>
+                                    <ul class="dropdown-menu">
+                                        <li class=""><a href="../HTML/Test-Start.html" class="dropdown-item">kiểm tra thử</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="" class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown">Đề Thi</a>
+                                    <ul class="dropdown-menu">
+                                        <li class=""><a href="../HTML/DeThiHK1.html" class="dropdown-item">Đề HKI</a></li>
+                                        <li class=""><a href="../HTML/DeThiHKII.html" class="dropdown-item">Đề HKII</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../HTML/About (1).html" class="nav-link  text-white">Chúng ta</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../HTML/contact.html" class="nav-link  text-white">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- search_btn -->
+                        <!-- <input type="text" placeholder="tìm kiếm" class="bx bx-search" style="border-radius: 10px;"> -->
+                        <div style="position: relative;">
+                            <input type="text" placeholder="Tìm kiếm" id="searchInput" style="border-radius: 10px;">
+                            <i class='bx bx-search search-icon' style="color: aliceblue;"></i>
+                        </div>
+                        <!-- <button type="button" class="btn btn-dark">Search</button>-->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- btn_signup -->
+                        <div class="w3-container">
+                            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green w3-large" style="border-radius: 15px;">Đăng nhập</button> 
+                          
+                            <div id="id01" class="w3-modal">
+                              <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+                          
+                                <div class="w3-center"><br>
+                                  <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+                                </div>
+                          
+                                <form class="w3-container" action="">
+                                  <div class="w3-section">
+                                    <label><b>Username</b></label>
+                                    <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+                                    <label><b>Password</b></label>
+                                    <input class="w3-input w3-border" type="password" placeholder="Enter Password" name="psw" required>
+                                    <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Đăng nhập</button>
+                                    <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
+                                   
+                                  </div>
+                                </form>
+                                
+                                <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+                                    <button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-green w3-large">Đăng kí</button>
+                                    <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span>
+                                    <div id="id02" class="w3-modal">
+                                        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+                                    
+                                          <div class="w3-center"><br>
+                                            <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+                                          </div>
+                                    
+                                          <form class="w3-container" action="">
+                                            <div class="w3-section">
+                                              <label><b>Name</b></label>
+                                              <input class="w3-input w3-border" type="text" placeholder="Enter Name" name="name" required>
+                                              <label><b>Ngày sinh</b></label>
+                                              <input class="w3-input w3-border" type="date" placeholder="Enter date" name="date" required>
+                                              <label><b>Địa chỉ</b></label>
+                                              <input class="w3-input w3-border" type="text" placeholder="Enter address" name="address" required>
+                                              <label><b>Số điện thoại</b></label>
+                                              <input class="w3-input w3-border" type="text" placeholder="Enter sdt" name="sdt" required>
+                                              <label><b>Email</b></label>
+                                              <input class="w3-input w3-border" type="text" placeholder="Enter mail" name="mail" required>
+                                              <label><b>Password</b></label>
+                                              <input class="w3-input w3-border" type="password" placeholder="Enter Password" name="psw" required>
+                                              <label><b>Repassword</b></label>
+                                              <input class="w3-input w3-border" type="password" placeholder="Enter repassword" name="repsw" required>
+                                              <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Đăng kí</button>
+                                            </div>
+                                          </form>
+                                  
+                                </div>
+                          
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </nav>
+            </div>
+        <div class="container mt-5">
+            <div id="advertise">
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    </div>
+                        
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../IMG/anhmauxanh.png" alt="Los Angeles" class="d-block" style="width:100%;height:auto;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../IMG/chicago.png" alt="Chicago" class="d-block" style="width:100%;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../IMG/anhquangcao5.jpg" alt="New York" class="d-block" style="width:100%">
+                        </div>
+                    </div>
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>        
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="box-class">
+                <div class="content-title">
+                    <p>
+                        <a href="../HTML/Home.html">Home</a> >
+                        <a href="../HTML/Test-Start.html">Kiểm tra thử</a> >
+                        <a href="../HTML/Test-lop12.html" style="color: grey;">Kiểm tra Lớp 12</a>
+                    </p>
+                </div>
+                <div class="test">
+                    <div class="qa-box">    
+                        <div class="qa-header">
+                            <span>Score
+                                <span id="score">0</span>
+                            </span>
+                            <span id="countdown">0</span>
+                        </div>
+                        <div class="qa-body">
+                            <div class="qa-set active">
+                                <h4>Câu 1: Trong các mệnh đề sau, mệnh đề nào đúng?</h4>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a1">
+                                    <span>A) Số đỉnh và số mặt của một hình đa diện luôn bằng nhau;</span>
+                                </div>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a1" valid="valid">
+                                    <span>B) Tồn tại hình đa diện có số đỉnh và số mặt bằng nhau;</span>
+                                </div>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a1">
+                                    <span>C) Tồn tại một hình đa diện có số cạnh bằng số đỉnh;</span>
+                                </div>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a1">
+                                    <span>D) Tồn tại một hình đa diện có số cạnh và số mặt bằng nhau;</span>
+                                </div>
+                            </div>
+                            <div class="qa-set">
+                                <h4>Câu 2: Trong các mệnh đề sau, mệnh đề nào đúng? <br>
+
+                                    Số các đỉnh, hoặc các mặt của bất kì hình đa diện nào cũng:</h4>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a2" valid="valid">
+                                    <span>A) Lớn hơn hoặc bằng 4</span>
+                                </div>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a2">
+                                    <span>B) Lớn hơn 4</span>
+                                </div>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a2">
+                                    <span>C) Lớn hơn hoặc bằng 5</span>
+                                </div>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a2">
+                                    <span>D) Lớn hơn 5</span>
+                                </div>
+                            </div>
+                            <div class="qa-set">
+                                <h4>Câu 3: Số điểm cực đại của hàm số y = x^4 + 100 là:</h4>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a3" valid="valid">
+                                    <span>A.0.</span>
+                                </div>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a3">
+                                    <span>B. 1.</span>
+                                </div>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a3">
+                                    <span>C.2.</span>
+                                </div>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a3">
+                                    <span>D.3.</span>
+                                </div>
+                            </div>
+                            <div class="qa-set">
+                                <h4>Câu 4: Số đường tiệm cận của đồ thị hàm số y=(1-x)/(1+x)là:</h4>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a4">
+                                    <span>A.1</span>
+                                </div>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a4" valid="valid">
+                                    <span>B.2</span>
+                                </div>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a4">
+                                    <span>C.3</span>
+                                </div>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a4">
+                                    <span>D.0</span>
+                                </div>
+                            </div>
+                            <div class="qa-set">
+                                <h4>Câu 5.Cho hình phẳng giới hạn bởi các đường y = √x và y = x quay xung quanh trục Ox. Thể tích của khối tròn xoay tạo thành bằng:</h4>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a5">
+                                    <span>A.0.</span>
+                                </div>
+                                <div class="qa-ans-row" >
+                                    <input type="radio" name="a5">
+                                    <span>B.–π.</span>
+                                </div>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a5">
+                                    <span>C.π.</span>
+                                </div>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a5" valid="valid">
+                                    <span>D.π/6.</span>
+                                </div>
+                            </div>
+                            <div class="qa-set">
+                                <h4>Câu 6.Biết nghịch đảo của số phức z bằng số phức liên hợp của nó, trong các kết luận sau, kết luận nào là đúng?</h4>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a6">
+                                    <span>A.z ∈ R</span>
+                                </div>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a6" valid="valid">
+                                    <span>B.|z| = 1</span>
+                                </div>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a6">
+                                    <span>C.z là số thuần ảo</span>
+                                </div>
+                                <div class="qa-ans-row" >
+                                    <input type="radio" name="a6">
+                                    <span>D. |z| = -1</span>
+                                </div>
+                            </div>
+                            <div class="qa-set">
+                                <h4>Câu 7. Trong các kết luận sau, kết luận nào là sai?</h4>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a7">
+                                    <span>A. Mô đun của số phức z là một số thực</span>
+                                </div>
+                                <div class="qa-ans-row" >
+                                    <input type="radio" name="a7">
+                                    <span>B. Mô đun của số phức z là một số phức</span>
+                                </div>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a7" valid="valid">
+                                    <span>C. Mô đun của số phức z là một số thực dương</span>
+                                </div>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a7">
+                                    <span>D. Mô đun của số phức z là một số thực không âm.</span>
+                                </div>
+                            </div>
+                            <div class="qa-set">
+                                <h4>Câu 8.Tiếp tuyến tại điểm cực tiểu của đồ thị hàm số: <br> y = (1/3)*x^3 -2x^2 +3x -5</h4>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a8">
+                                    <span>A.Song song với đường thẳng x = 1;</span>
+                                </div>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a8" valid="valid">
+                                    <span>B.Song song với trục hoành;</span>
+                                </div>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a8">
+                                    <span>C.Có hệ số góc dương;</span>
+                                </div>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a8">
+                                    <span>D.Có hệ số gọc bằng -1.</span>
+                                </div>
+                            </div>
+                            <div class="qa-set">
+                                <h4>Câu 9. Trong các mệnh đề sau, mệnh đề nào đúng?</h4>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a9">
+                                    <span>A. Nếu f'(x0) = 0 thì x0 là điểm cực trị của hàm số.</span>
+                                </div>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a9">
+                                    <span>B. Nếu f'(x0) = 0 thì x0 là điểm cực đại của hàm số.</span>
+                                </div>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a9">
+                                    <span>C. Nếu f'(x0) = 0 và f''(x0) > 0 thì x0 là điểm cực đại của hàm số.</span>
+                                </div>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a9" valid="valid">
+                                    <span>D. Nếu f(x) có đạo hàm tại x0 và f’(x) đổi dấu khi x đi qua x0 thì x0 là điểm cực trị của hàm số.</span>
+                                </div>
+                            </div>
+                            <div class="qa-set">
+                                <h4>Câu 10. Với giá trị nào của m, hàm số y = (x - m)^3 - 3x đạt cực tiểu tại điểm có hoành độ x = 0?</h4>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a10">
+                                    <span>A.m = 1</span>
+                                </div>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a10" valid="valid">
+                                    <span>B.m = -1  </span>
+                                </div>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a10">
+                                    <span>C.m = 0 </span>
+                                </div>
+                                <div class="qa-ans-row">
+                                    <input type="radio" name="a10">
+                                    <span>D.Không tồn tại</span>
+                                </div>
+                            </div>
+                            <div id="resultSection"  class="qa-set">
+                                <h4>Điểm của bạn <span class="totalScore">0</span> trên 10</h4>
+                            </div>
+                        </div>
+                        <div class="qa-footer">
+                            <span class="btn1" id="skip">Skip</span>
+                        </div>
+                    </div>
+                    <div class="test-aside">
+                        <div class="result">
+                            <h2>Kết quả</h2>
+                            <p>Điểm: <span class="totalScore">0</span></p>
+                            <p>Thời gian nộp bài:<span id="timestop">0</span></p>
+                        </div>
+                        <div class="rank" id="tbrank">
+                        </div>
+                    </div>
+                </div>
+                <div class="row title" style="color: black;">
+                    <h3>
+                        Top các người làm bài nhanh nhất
+                    </h3>
+                </div>
+                <div class="row">
+                    <div class="table-responsive">
+                        <table class="table text-center border-black" style="border-radius: 15px;" id="tblDanhSach">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Rank</th>
+                                    <th scope="col">Số điểm</th>
+                                    <th scope="col">Thời gian nộp bài</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="">
+                                    <td scope="row">#1</td>
+                                    <td>10</td>
+                                    <td>5 phút 20 giây</td>
+                                </tr>
+                                <tr class="">
+                                    <td scope="row">#2</td>
+                                    <td>10</td>
+                                    <td>3 phút 15 giây</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>  
+                </div>
+        
+            </div>
+        </div>
+        <div class="mt-5 p-4  bg-secondary  text-white text-center">
+            <div class="text-footer">
+                <div class="about-us" style="width: 50%; text-align: left;">
+                    <h5>Về chúng tôi</h5>
+                <span style="font-size: 12px;"><p>Là chương trình ôn tập, tự học TOÁN ,trực tuyến dành cho học sinh từ lớp 10 đến lớp 12 heo phương pháp mới,
+                        giúp tránh được cảm giác nhàm chán với cách học trên sách vở truyền thống.MOT giúp học sinh có thêm một người BẠN HỌC thân thiết, một GIA SƯ THÚ VỊ và là một CÔNG CỤ TỰ HỌC HIỆU QUẢ.</p></span>    
+                </div>
+                <div class="class-footer">
+                    <h6>Các lớp học</h6>
+                    <ul>
+                        <li><a href="../HTML/Lop10.html">Lớp 10</a></li>
+                        <li><a href="../HTML/Lop11.html">Lớp 11</a></li>
+                        <li><a href="../HTML/Lop12.html">Lớp 12</a></li>
+                    </ul>
+                </div>
+                <div class="class-footer">
+                    <h6>Chuyên đề</h6>
+                    <ul>
+                        <li><a href="../HTML/Lop10.html">Chuyên đề Lớp 10</a></li>
+                        <li><a href="../HTML/Lop11.html">Chuyên đề Lớp 11</a></li>
+                        <li><a href="../HTML/Lop12.html">Chuyên đề Lớp 12</a></li>
+                    </ul>
+                </div>
+                <div class="list-footer">
+                    <h5>Hãy theo dõi MATHGENIUS trên</h5>
+                    <ul>
+                        <li><a href=""><i class='bx bxl-facebook-circle'></i></a></li>
+                        <li><a href=""><i class='bx bxl-instagram-alt'></i></a></li>
+                        <li><a href=""><i class='bx bxl-google'></i></a></li>
+                        <li><a href=""><img src="../IMG/youtube-logo-24.png" alt="" style="position: relative;bottom: 9px;"></a></li>
+                        <li><a href=""><img src="../IMG/gmail-logo-24.png" alt=""  style="position: relative;bottom: 9px;"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var skipButton = document.getElementById('skip');
+            var countdown = document.getElementById('countdown');
+            var qaSet = document.querySelectorAll('.qa-set');
+            var qaAnsRow = document.querySelectorAll('.qa-set .qa-ans-row input');
+            var totalScores = document.querySelectorAll('.totalScore');
+
+            var count = 0;
+            var scoreCount = 0;
+            var duration = 15 * 60; // 15 phút * 60 giây
+            var timer;
+
+            skipButton.addEventListener('click', function() {
+                step();
+        });
+
+    qaAnsRow.forEach(function(qqAnsRowSingle) {
+        qqAnsRowSingle.addEventListener('click', function() {
+            setTimeout(function() {
+                step();
+            }, 500);
+            var valid = this.getAttribute("valid");
+            if (valid === "valid") {
+                scoreCount += 1;
+                score.innerHTML = scoreCount;
+                totalScores.forEach(function(totalScore) {
+                    totalScore.innerHTML = scoreCount;
+                });
+            }
+        });
+    });
+
+    function step() {
+        count += 1;
+        for (var i = 0; i < qaSet.length; i++) {
+            qaSet[i].className = 'qa-set';
+        }
+        qaSet[count].className = 'qa-set active';
+        if (count === 10) {
+            skipButton.style.display = 'none';
+            stopTimer();
+        }
+    }
+
+    function stopTimer() {
+        clearInterval(timer);
+        countdown.innerHTML = "Đã dừng";
+        skipButton.disabled = true;
+
+        const timestopElement = document.getElementById('timestop');
+        if (timestopElement) {
+            timestopElement.innerHTML = formatTime(duration);
+        }
+    }
+
+    timer = setInterval(function() {
+        var minutes = Math.floor(duration / 60);
+        var seconds = duration % 60;
+
+        countdown.innerHTML = minutes + " phút " + seconds + " giây ";
+
+        if (--duration < 0) {
+            clearInterval(timer);
+            alert("Hết giờ!");
+            skipButton.style.display = 'none';
+            document.querySelector('.qa-set.active').classList.remove('active');
+            document.querySelector('.result').classList.add('active');
+            stopTimer();
+        }
+    }, 1000);
+});
+
+function formatTime(duration) {
+    const minutes = Math.floor(duration / 60);
+    const seconds = duration % 60;
+    return `${minutes} phút ${seconds} giây`;
+}
+
+    </script> 
+</body>
+</html>

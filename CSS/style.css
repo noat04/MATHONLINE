@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0px auto;
+    padding: auto;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem ;
+}
+.logo-button{
+    display: flex;
+}
+.logo img {
+    width: 120px; 
+    height: auto;
+    border-radius: 50px;
+    margin-left: 0px; 
+}
+.main-menu{
+    width: 100%;
+    height: px;
+    background-color: rgb(45, 182, 45);
+    color: white;
+    padding: 2px 2px 2px 2px;
+    border-radius: 35px;
+}
+
+.logo-button{
+    width:max-content!important;
+}
+.navbar-nav {
+    display: flex;
+    justify-content: flex-start; /* Căn giữa các mục menu */
+    width: 100%;
+}
+
+.navbar-nav .nav-item {
+    margin: 10px 10px 10px 10px; /* Khoảng cách giữa các mục menu */
+    display: flex;
+    align-items: center; /* Căn các mục vào giữa theo chiều dọc */
+}
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem; /* Điều chỉnh khoảng cách giữa các mục menu */
+}
+#advertise{
+    width: 100%;
+    height: 250px;
+    background-color: beige;
+    margin-top: 30px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+.slide{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.box-class{
+    height: auto;
+    width: 100%;
+    /* background-color: aqua; */
+    margin-top: 30px;
+    /* overflow: hidden; */
+}
+.title{
+    border-radius: 20px;
+    height: 40px;
+    color: white;
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+}
+.title h4 {
+    margin: 0; /* Loại bỏ margin mặc định */
+    line-height: 40px; /* Căn dòng chữ vào giữa */
+}
+.title-box{
+    height: 100px;
+    padding: 10px 10px 10px 10px;
+    color: aliceblue;
+}
+.footer{
+    position: relative;
+    top: 20px;
+    width: 100%;
+    height: 150px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    margin: 0px 0px 0px 0px;;  
+}
+.text-footer{
+    height: 100px;
+}
+.list-footer {
+    height: 50px;
+}
+.list-footer li {
+    margin: 0 10px; /* Adjust spacing between items */
+    list-style: none;
+    display: inline-block;
+}
+.text-footer{
+    display: flex;
+}
+.list-footer li a {
+    text-decoration: none;
+    color: white;
+}
+.class-footer li a{
+    text-decoration: none;
+    color: white;
+}
+.class-footer li{
+    list-style-type: none;
+    position: relative;
+    right: 10px;
+}
+.bx.bxl-facebook-circle {
+    font-size: 30px; /* Đặt kích thước mong muốn */
+    color: #000;
+}
+.bx.bxl-instagram-alt{
+    font-size: 30px;
+    color: #000;
+}
+.bx.bxl-google{
+    font-size: 30px;
+    color: #000;
+}
+.bx.bxl-youtube{
+    font-size: 30px;
+    color: #000;
+}
+/* Thêm CSS cho footer */
+/* ///////////////////////////HOME */
+.list li{
+    list-style: none;
+    /* display: block; */
+    text-align: center;
+    width: auto;
+    border-radius: 10px;
+    margin: 10px 10px 10px 10px;
+    line-height: 100px;
+    background-color: aliceblue;
+}
+.list li a{
+    text-decoration: none;
+    color: #000;
+}
+.content-video{
+    line-height: 100px;
+}
+.content-title{
+    font-size: 15px;
+    /* background-color: blueviolet; */
+    height: 50px;
+    width: 500px;
+    margin: 0px 600px 20px 20px;
+    text-align: left; 
+}
+.content-title a{
+    text-decoration: none;
+}
+/* ////////////////////////////ABOUT */
+.box-about{
+    height: auto;
+    width: 1025px;
+    background-color: aqua;
+    margin-top: 30px;
+}
+.title-about{
+    text-align: center;
+    font-size: 30px;
+}
+/* /////////////////////////LOP10,11,12 */
+.content-left{
+    width: 70%;
+    /* background-color: wheat; */
+    margin-right: 10px;
+    height: auto;
+}
+.list li{
+    background-color: green;
+}
+.list li a{
+    color: white;
+}
+.content-right{
+    width: 30%;
+    /* background-color: aquamarine; */
+    height: auto;
+    /* border: 1px solid black; */
+    text-shadow: 1px;
+}
+.content-lop10{
+    display: flex;
+}
+.content-left p {
+    word-wrap: break-word;
+}
+.content-left h4{
+    color: brown;
+    text-align: center;
+    font-size: xx-large;
+}
+.content-left h5{
+    color: brown;
+    font-size:large;
+}
+/* /////////////////////////////////KiemTraStart */
+
+/* /////////////////////////////KiemTra10,11,12 */
+.test{
+    display: flex;
+    padding-bottom: 20px;
+}
+.test-aside{
+    width: 25%;
+    background-color: aliceblue;
+}
+.result{
+    text-align: center;
+}
+.qa-box{
+    width: 50%;
+    padding: 20px;
+    min-height: 100px;
+    background-color: aliceblue;
+    border-radius: 15px;
+}
+.qa-header{
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-radius: 15px 15px 0 0;
+}
+
+.qa-set{
+    display: none;
+}
+.qa-set.active{
+    display: block;
+}
+.qa-set h4{
+    margin: 0 0 15px;
+    font-size: 20px;
+}   
+.qa-ans-row {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.qa-ans-row input {
+    opacity: 0;
+    position: absolute;
+    /* z-index: 1; */
+    cursor: pointer;
+}
+.qa-ans-row span{
+    display: block;
+    padding: 8px 15px;
+    background-color: aquamarine;
+    border-radius: 15px;
+    transition: all 0.3s ease-out;
+}
+
+.qa-ans-row:hover span{
+background-color: antiquewhite;
+}
+.qa-ans-row input:checked + span {
+    background-color: crimson;
+}
+.qa-ans-row input[valid]:checked +span{
+    background-color: green;
+    color: #fff;
+}
+.qa-ans-row img{
+    width: 50%;
+    height: 50%;
+}
+.qa-footer{
+    padding: 10px 0 0;
+    text-align: right;
+    color: #fff;
+}
+.btn1{
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: blue;
+    cursor: pointer;
+    transition:  all 0.3s ease-out;
+}
+.btn1:hover{
+    background-color: brown;
+}
+/* ////////////////////////////////Article */
+.article{
+    width: 100%;
+    height: auto;
+    background-color: aliceblue;
+}
+
+.title-article{
+    font-size: larger;
+    color: brown;
+    text-align: center;
+    border-bottom:1px solid #000 ;
+}
+.content-article{
+    width: 95%;
+    height: auto;
+
+}
+.content-article li a{
+    text-decoration: none;
+}
+/* .content-about{
+    
+} */
+/* For mobile phones: */
+@media only screen and (max-width: 600px) {
+    .logo img {
+        width: 80px; /* Điều chỉnh kích thước logo */
+        height: auto; /* Đảm bảo tỷ lệ khung hình bảo toàn */
+        border-radius: 50%; /* Bo tròn logo */
+    }
+    .main-menu {
+        font-size: 14px; /* Điều chỉnh kích thước chữ trong menu */
+    }
+    .navbar-nav .nav-item {
+        margin: 5px 2px; /* Điều chỉnh khoảng cách giữa các mục menu */
+    }
+    /* Các thiết lập khác cho các phần tử khác tùy thuộc vào nhu cầu của bạn */
+    .content-title {
+        width: 90%; /* Sử dụng phần lớn chiều rộng của màn hình */
+        margin: 0 auto; /* Căn giữa nội dung */
+        font-size: 18px; /* Điều chỉnh kích thước chữ tiêu đề */
+    }
+    .title-box{
+        height: 50%;
+    }
+    .tieude{
+        font-size: 15px;
+    }
+    .title-box p{
+        font-size: 14px;
+    }
+    #advertise{
+        height: auto;
+    }
+    .list{
+        height: auto;
+        width: auto;
+    }
+    .list li{
+        height: auto;
+        width: auto;
+        line-height: 100%;
+    }
+    .list li a{
+        font-size: 10px;
+    }
+    .footer {
+        padding: 20px; /* Tăng khoảng cách giữa các phần tử trong footer */
+        height: auto;
+    }
+    span > p {
+        display: none; /* Ẩn phần nội dung trong thẻ <p> */
+    }
+    .about-us, .class-footer, .list-footer {
+        width: 100%; /* Sử dụng toàn bộ chiều rộng */
+        text-align: center; /* Căn giữa các phần tử */
+        margin-bottom: 20px; /* Tạo khoảng cách giữa các phần tử */
+    }
+    .about-us h5, .class-footer h6, .list-footer h5 {
+        font-size: 14px; /* Điều chỉnh kích thước font */
+    }
+    .about-us span {
+        font-size: 14px; /* Điều chỉnh kích thước font */
+    }
+    .list-footer ul {
+        padding-left: 0; /* Loại bỏ padding mặc định của danh sách */
+        /* flex-wrap: wrap; */
+        /* justify-content: center */
+    }
+    .list-footer li{
+        padding: auto;
+    }
+    .list-footer ul li {
+        display: inline-block; /* Hiển thị các phần tử cùng hàng */
+    }
+    .list-footer ul li:last-child {
+        margin-right: 0; /* Loại bỏ khoảng cách ở phần tử cuối cùng */
+    }
+    .list-footer ul li a {
+        font-size: 15px; /* Điều chỉnh kích thước icon */
+        padding: 0px;
+    }
+    .list-footer ul li a img {
+        width: 15px; /* Điều chỉnh kích thước của hình ảnh */
+        height: auto; /* Đảm bảo tỷ lệ khung hình bảo toàn */
+
+    }
+    .bx.bxl-facebook-circle,.bx.bxl-google,.bx.bxl-instagram-alt{
+        font-size: 15px;
+    }
+    .class-footer li{
+        font-size: 10px;
+    }
+    .test {
+        flex-direction: column; /* Chuyển định dạng hiển thị sang dạng cột */
+    }
+    .test-aside {
+        width: 100%; /* Sử dụng toàn bộ chiều rộng của màn hình */
+        margin-bottom: 20px; /* Tạo khoảng cách giữa sidebar và nội dung chính */
+    }
+}
